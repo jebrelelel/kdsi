@@ -1,0 +1,146 @@
+:root{
+    --gradient:linear-gradient(90deg, #646464, #646464);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    border:none; 
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    background-color: ;
+}
+
+*::selection{
+    background:#838383;
+    color:#fff;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem 8%;
+    padding-top:6rem;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.5rem 8%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header .logo{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 3rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.65rem;
+    color:#fff;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 30px rgb(0, 0, 0),0px 0px 30px rgb(0, 0, 0),0px 0px 10px #000000,0px 0px 10px #000000;
+}
+
+header #menu{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 3.5rem;
+    color:#666;
+    width: 90rem;
+}
+
+.home p{
+    font-size: 1.8rem;
+    color:#999;
+    padding:1.5rem 0;
+    width:50rem;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+}
+
+.login-box{
+    width:50rem;
+    height: 50rem;
+    border: .5rem double rgba(0, 0, 0, 0.856);
+    position: relative;
+    margin:1.5rem;
+    background-color: #a1a1a1;  
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-input {
+    border-radius: 12px;
+    margin:1.5rem;
+    margin-top: 5.5rem;
+    width:46rem;
+    padding:0.5rem;
+    border: .5rem solid rgba(0, 0, 0, 0.623);
+    color:#666;
+    font-size: 2rem;
+    background-color: #ffffff;
+}
+
+.login .login-container .login-box .button-login {
+    display: grid;
+    padding:1.4rem 3.4rem;
+    font-size: 1.4rem;
+    color:#fff;
+    background:var(--gradient);
+    border: .3rem outset rgba(63, 63, 63, 0.329);
+    border-radius: 12px;
+    margin-top: 5.1rem;
+    cursor: pointer;
+    position: relative;
+    left: 28%;
+    width: 45%;
+}
